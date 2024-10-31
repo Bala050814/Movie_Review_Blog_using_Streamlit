@@ -43,3 +43,9 @@ rating=st.slider("Give Your Review After Watching : ", min_value=0, max_value=10
 if rating:
     st.write("Your rating:",rating,"/10")
     st.write("Thank you For your Response !!")
+
+
+st.markdown("### Share your thoughts:")
+user_comment = st.text_area("Leave a comment about the series:")
+if st.button("Submit"):
+    st.write("Thank you for your comment!")
